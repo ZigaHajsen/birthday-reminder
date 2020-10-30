@@ -74,6 +74,7 @@ h4 {
   text-transform: capitalize;
   line-height: 1.25;
   margin-bottom: 0.75rem;
+  cursor: default;
 }
 
 h1 {
@@ -136,12 +137,5 @@ p {
   .section {
     width: 95vw;
   }
-}
-
-main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 `;
