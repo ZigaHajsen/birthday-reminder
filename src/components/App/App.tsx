@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearAll } from '../../redux/actions';
 import { Main, Container, Title, Button } from './styles/AppStyle';
-import { List } from '../';
+import { List } from '..';
 
 interface AppState {
   people: [
