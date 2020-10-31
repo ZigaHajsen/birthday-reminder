@@ -2,7 +2,14 @@ import React from 'react';
 import { Container, Article, Image, Name, Age } from './styles/ListStyle';
 
 interface TodoProps {
-  people: [];
+  people: [
+    {
+      id: number;
+      name: string;
+      age: number;
+      image: string;
+    }
+  ];
 }
 
 const List: React.FC<TodoProps> = ({ people }) => {
@@ -12,7 +19,7 @@ const List: React.FC<TodoProps> = ({ people }) => {
         const { id, name, age, image } = person;
         return (
           <Article key={id}>
-            <img src={image} alt={name} />
+            <Image src={image} alt={name} />
             <div>
               <Name>{name}</Name>
               <Age>{age} years</Age>

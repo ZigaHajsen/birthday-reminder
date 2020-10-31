@@ -138,13 +138,4 @@ p {
     width: 95vw;
   }
 }
-
-
-img {
-  width: 75px;
-  height: 75px;
-  object-fit: cover;
-  border-radius: 50%;
-  box-shadow: var(--light-shadow);
-}
 `;

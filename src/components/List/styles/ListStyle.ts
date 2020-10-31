@@ -9,7 +9,7 @@ export const Article = styled.article`
   margin-bottom: 1.5rem;
   align-items: center;
 `;
-export const Image = styled.image`
+export const Image = styled.img`
   width: 75px;
   height: 75px;
   object-fit: cover;
