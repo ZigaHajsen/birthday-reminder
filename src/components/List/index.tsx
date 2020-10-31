@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Article, Image, Name, Age } from './styles/ListStyle';
 
-interface TodoProps {
+interface ListProps {
   people: [
     {
       id: number;
@@ -12,7 +12,7 @@ interface TodoProps {
   ];
 }
 
-const List: React.FC<TodoProps> = ({ people }) => {
+const List: React.FC<ListProps> = ({ people }) => {
   return (
     <Container>
       {people.map((person) => {
