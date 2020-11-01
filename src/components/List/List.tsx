@@ -14,7 +14,7 @@ interface ListProps {
 
 const List: React.FC<ListProps> = ({ people }) => {
   return (
-    <Container>
+    <Container data-test='list-component'>
       {people.map((person) => {
         const { id, name, age, image } = person;
         return (
