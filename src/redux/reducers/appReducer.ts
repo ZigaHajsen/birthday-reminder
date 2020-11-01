@@ -1,7 +1,9 @@
 import { Action } from 'redux';
 import data from '../../data.json';
 
-export default function appReducer(state = data, action: Action) {
+const initialState = data;
+
+export default function appReducer(state = initialState, action: Action) {
   switch (action.type) {
     case 'CLEAR_ALL':
       return (state = []);
