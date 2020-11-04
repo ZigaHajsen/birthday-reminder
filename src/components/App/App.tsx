@@ -20,7 +20,7 @@ const App: React.FC = () => {
   const dispatch = useDispatch();
 
   return (
-    <Main>
+    <Main data-test='app-component'>
       <Container>
         <Title>{people.length} birthdays today</Title>
         <List people={people} />

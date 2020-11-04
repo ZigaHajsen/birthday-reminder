@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, ShallowWrapper } from 'enzyme';
 import List from './List';
 
 interface ListProps {
@@ -25,7 +25,7 @@ const defaultProps: ListProps = {
   ],
 };
 
-const findByTestAttribute = (wrapper: any, value: string) => {
+const findByTestAttribute = (wrapper: ShallowWrapper, value: string) => {
   return wrapper.find(`[data-test='${value}']`);
 };
 
