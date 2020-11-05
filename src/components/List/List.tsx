@@ -1,15 +1,9 @@
 import React from 'react';
 import { Container, Article, Image, Name, Age } from './styles/ListStyle';
+import { ListModel } from '../../models/list.model';
 
 interface ListProps {
-  people: [
-    {
-      id: number;
-      name: string;
-      age: number;
-      image: string;
-    }
-  ];
+  people: ListModel[];
 }
 
 const List: React.FC<ListProps> = ({ people }) => {

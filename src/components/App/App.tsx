@@ -2,17 +2,11 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { clearAll } from '../../redux/actions';
 import { Main, Container, Title, Button } from './styles/AppStyle';
+import { ListModel } from '../../models/list.model';
 import { List } from '..';
 
 interface AppState {
-  people: [
-    {
-      id: number;
-      name: string;
-      age: number;
-      image: string;
-    }
-  ];
+  people: ListModel[];
 }
 
 const App: React.FC = () => {
